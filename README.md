@@ -1,6 +1,6 @@
 # obs-ctl
 
-[![CI](https://github.com/OWNER/obs-ctl/actions/workflows/ci.yml/badge.svg)](https://github.com/OWNER/obs-ctl/actions)
+[![CI](https://github.com/danieljamesbertrand/obs-ctl/actions/workflows/ci.yml/badge.svg)](https://github.com/danieljamesbertrand/obs-ctl/actions)
 
 A small, safe command-line tool for controlling OBS Studio (28+) through its built-in
 WebSocket server (obs-websocket 5). It reads the host, port and password from OBS's
