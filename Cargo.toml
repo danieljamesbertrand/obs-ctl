@@ -1,0 +1,25 @@
+[package]
+name = "obs-ctl"
+version = "0.1.0"
+edition = "2021"
+description = "Small, safe CLI to control OBS Studio over obs-websocket 5 (reads OBS's own config, never prints the password)"
+license = "MIT OR Apache-2.0"
+authors = ["Daniel James Bertrand"]
+readme = "README.md"
+keywords = ["obs", "obs-websocket", "streaming", "recording", "cli"]
+categories = ["command-line-utilities", "multimedia"]
+rust-version = "1.89"
+
+[[bin]]
+name = "obs-ctl"
+path = "src/main.rs"
+
+[lib]
+name = "obs_ctl"
+path = "src/lib.rs"
+
+[dependencies]
+obws = "0.15"
+tokio = { version = "1", features = ["rt", "macros", "time"] }
+serde_json = "1"
+time = "0.3"
